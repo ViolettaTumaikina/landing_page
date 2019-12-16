@@ -58,7 +58,7 @@ html, body{
 
 #post_input{
 	font-size: 25px;
-    margin: 20px 145px;
+    margin: 20px 160px;
     padding: 20px;
     background: white;
     border: none;
@@ -757,6 +757,78 @@ small span{
 	}
 }
 
+@media screen and (min-width: 770px) and (max-width: 1022px){
+	.fixed-container{
+		width: 100%;
+	}
+	.info a {
+    	padding-right: 20px;
+	}
+	.fon{
+		background-size: 61%;
+	}
+	.supp1 {
+    	transform: translate(-230px,-352px) rotate(28deg);
+	}
+	.supp2 {
+    	transform: translate(411px,-385px) rotate(-15deg);
+	}
+	.supp3 {
+    	transform: translate(-230px,125px) rotate(13deg);
+	}
+	.Frontend{
+		padding-top: 60px;
+		padding-left: 10px;
+	}
+	.Frontend h1{
+		font-size: 44px;
+	}
+	.Frontend p{
+		font-size: 22px;
+	}
+	.deal {
+    	margin: 0 10%;
+	}
+	.cost{
+    	margin: 0px 30%;
+	}
+	.project{
+    	margin: 0px 30%;
+	}
+	.works img {
+	    width: 90%;
+	    height: auto;
+	}
+	.fon4 h2{
+		width: 100%;
+		padding-left: 10px;
+	}
+	.fon4 p{
+		width: 100%;
+		padding-left: 10px;
+	}
+	.supp6{
+		left: 56px;
+	}
+	.supp8 {
+	    left: 390px;
+	    top: 366px;
+	}
+	.supp9 {
+    	left: 685px;
+    	top: 220px;
+	}
+	.contacts{
+		padding-left: inherit;
+	}
+	.call1 {
+    	width: 200px;
+	}
+	small span {
+    	margin: 0 34%;
+	}
+}
+
 
 @media screen and (max-width: 768px) {
 
@@ -1405,7 +1477,7 @@ small span{
 	}
 	.social-connect a{
 		display: inline-block;
-		background-image: url('img/sprite1.png');
+		background-image: url('img/sprite.png');
 		background-repeat: no-repeat;
 	  	width: 40px;
 	  	height: 40px;
