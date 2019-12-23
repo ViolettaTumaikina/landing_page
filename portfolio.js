@@ -12,6 +12,10 @@ var popup_feedback_form =$('.popup_feedback_form')
 
 var popup =$('.popup')
 
+var backButton = $('.backbtn')
+
+var nextButton = $('.nextbtn')
+
 
 $('.menu').click(function() {
 	menu.toggleClass('close');
@@ -23,11 +27,10 @@ $('.menu2').click(function() {
  		info.toggleClass('active');
 })
 
-var backButton = ('.backbtn');
-var nextButton = ('.nextbtn');
+
 
 $('.work').slick({
-
+	
 	infinite: true,
 	dots: true,
 	slidesToShow: 3, 
