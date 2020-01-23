@@ -74,6 +74,18 @@ $(function(){
         $('#overlay').remove('#overlay');
 		$('html,body').css('overflow','scroll');
 		return false;
-
     });
+});
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $('.popup_feedback_form'); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.hide();
+			popup.hide();
+			$('#overlay').remove('#overlay');
+			$('html,body').css('overflow','scroll');
+			return false;// скрываем его
+		}
+	});
 });

@@ -69,9 +69,33 @@ html, body{
 }
 
 .close1{
-	text-decoration: none;
-	color: white;
-	padding-left: 485px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 32px;
+	height: 32px;
+	opacity: 1;
+}
+
+.close1:hover {
+	opacity: 1;
+}
+
+.close1:before, .close1:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 33px;
+	width: 2px;
+	background-color: white;
+}
+
+.close1:before {
+	transform: rotate(45deg);
+}
+
+.close1:after {
+	transform: rotate(-45deg);
 }
 
 .fixed-container{
@@ -120,13 +144,14 @@ html, body{
 	color: black;
 }
 
-.porto{
-	color: #fc8ba3;
-}
-
 .info2{
 	color: black;
 	text-decoration: none;
+}
+
+.info a:hover{
+	color: #fc8ba3;
+	text-decoration: underline;
 }
 
 .number{
@@ -586,7 +611,7 @@ html, body{
 
 small span{
 	color: white;
-    margin: 0 43%;
+    margin: 0 40%;
     font-size: 18px;
 }
 
@@ -1189,9 +1214,6 @@ small span{
 		width: 400px;
     	height: 500px;
 	}
-	.close1{
-		padding-left: 385px;
-	}
 	.popup_feedback_form label {
 	    font-size: 40px;
 	    margin: 0px 55px;
@@ -1515,9 +1537,6 @@ small span{
 	.popup_feedback_form{
 	    width: 255px;
 	    height: 300px;
-	}
-	.close1{
-		padding-left: 242px;
 	}
 	.popup1{
 		padding-top: inherit;
