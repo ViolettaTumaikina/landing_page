@@ -16,16 +16,20 @@ var backButton = $('.backbtn')
 
 var nextButton = $('.nextbtn')
 
+var change = $('.change')
 
-$('.menu').click(function() {
-	menu.toggleClass('close');
- 		info.toggleClass('active');	
-})
-
-$('.menu2').click(function() {
-	menu2.toggleClass('close');
+function burgerMenu(icon) {
+  icon.classList.toggle("change");
+  menu2.toggleClass('close');
  		info.toggleClass('active');
-})
+};
+
+function burgerMenu(icon) {
+  icon.classList.toggle("change");
+ 	menu.toggleClass('close');
+ 		info.toggleClass('active');
+};
+
 
 
 
@@ -68,6 +72,7 @@ $(function(){
 		$('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
 		return false;	
 	});
+
 	$('.close1').click(function(){
 		popup.hide();
         popup_feedback_form.hide();
@@ -75,7 +80,44 @@ $(function(){
 		$('html,body').css('overflow','scroll');
 		return false;
     });
+	/*$('.popup1').submit(function(){
+    $.post(
+        'post.php', // адрес обработчика
+         $(".popup1").serialize(), // отправляемые данные          
+        
+        function(msg) { // получен ответ сервера  
+            $('#my_message').html(msg);
+        }
+        $('#name_input').val('');
+    	$('#tel').val('');
+		}
+    );
+    return false;*/
+	/*$('.close1').click(function(){
+		popup.hide();
+        popup_feedback_form.hide();
+        $('#overlay').remove('#overlay');
+		$('html,body').css('overflow','scroll');
+		return false;
+    });*/
 });
+
+function call() {
+	  var msg   = $('.popup1').serialize();
+       $.ajax({
+         type: 'POST',
+         url: 'post.php', //обращаемся к обработчику
+         data: msg,
+        success: function(data) {  //в случае успеха выводим результаты в div "results"
+           //скрываем форму после отправки 
+            $('#results').html(data); //показываем сообщение об успехе вместо неё 
+         },
+         error:  function(xhr, str){ //ошибка выводит соответствующее сообщение 
+	    alert('Возникла ошибка: ' + xhr.responseCode);
+         }
+       });
+   }
+
 jQuery(function($){
 	$(document).mouseup(function (e){ // событие клика по веб-документу
 		var div = $('.popup_feedback_form'); // тут указываем ID элемента

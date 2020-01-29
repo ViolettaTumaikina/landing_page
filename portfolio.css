@@ -651,24 +651,35 @@ small span{
 		transform: translate(48px,-266px) rotate(20deg);
 	}
 	.info{
-		display: none;
+		font-size: 16px;
+	   display: none;
 	}
-	.menu{
-		display: block;
-		background-image: url('img/btn.png');
-		background-repeat: no-repeat;
-		width: 40px;
-		height: 32px;
-		border:none;
-		outline: none;
+	.menu {
+	  display: inline-block;
+	  cursor: pointer;
+	  top: 50%;
+	  left: 50%;
 	}
+		.bar1, .bar2, .bar3 {
+			width: 24px;
+		    height: 3px;
+		    background-color: #f82172;
+		    margin: 4px 0;
+		    transition: 0.4s;
+			}
+			.change .bar1 {
+			  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+			  transform: rotate(-45deg) translate(-9px, 6px) ;
+			}
+			.change .bar2 {
+			  opacity: 0;
+			}
+			.change .bar3 {
+			  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+			  transform: rotate(45deg) translate(-4px, -2px) ;
+			}
 	.active{
 		display: block;
-	}
-	.close{
-		background-image: url('img/krest.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
 	}
 	.deal{
 		flex-wrap: wrap;
@@ -853,6 +864,37 @@ small span{
 	small span {
     	margin: 0 34%;
 	}
+	.menu {
+	  display: inline-block;
+	  cursor: pointer;
+	  top: 50%;
+	  left: 50%;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 24px;
+	    height: 3px;
+	    background-color: #f82172;
+	    margin: 4px 0;
+	    transition: 0.4s;
+	}
+
+	/* Rotate first bar */
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	  transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	  opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	  transform: rotate(45deg) translate(-4px, -2px) ;
+	}
 }
 
 
@@ -864,14 +906,36 @@ small span{
 	.header{
 		padding-bottom: 20px;
 	}
-	.menu{
-		display: block;
-		background-image: url('img/btn.png');
-		background-repeat: no-repeat;
-		width: 40px;
-		height: 32px;
-		border:none;
-		outline: none;
+	.menu {
+	  display: inline-block;
+	  cursor: pointer;
+	  top: 50%;
+	  left: 50%;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 24px;
+	    height: 3px;
+	    background-color: #f82172;
+	    margin: 4px 0;
+	    transition: 0.4s;
+	}
+
+	/* Rotate first bar */
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	  transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	  opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	  transform: rotate(45deg) translate(-4px, -2px) ;
 	}
 	.supp1{
 		transform: translate(-216px,-182px) rotate(28deg);
@@ -957,11 +1021,6 @@ small span{
 	.active{
 		display: block;
 	}
-	.close{
-		background-image: url('img/krest.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
 	.supp6{
 		left: 10%;
 	}
@@ -1026,13 +1085,39 @@ small span{
     	width: 20%;
     	font-size: 20px;
 	}
-    .close{
-		background-image: url('img/krest.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
 	.supp5 {
     	transform: translate(105px,-183px) rotate(-20deg);
+	}
+	.menu {
+	  display: inline-block;
+	  cursor: pointer;
+	  top: 50%;
+	  left: 50%;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 24px;
+	    height: 3px;
+	    background-color: #f82172;
+	    margin: 4px 0;
+	    transition: 0.4s;
+	}
+
+	/* Rotate first bar */
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	  transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	  opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	  transform: rotate(45deg) translate(-4px, -2px) ;
 	}
 }
 
@@ -1051,23 +1136,40 @@ small span{
 		width: 100%;
 		margin: 0 30px;
 	}
-	.close{
-		background-image: url('img/krest.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
 	.number2 a{
 		color: black;
 		text-decoration: none;
 	}
-	.menu2{
-		background-image: url('img/hamburger.png');
-		background-repeat: no-repeat;
-		width: 25px;
-		height: 21px;
-		outline: none;
-		border: none;
-		cursor: pointer;
+	.menu2 {
+	  display: inline-block;
+	  cursor: pointer;
+	  top: 50%;
+	  left: 50%;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 24px;
+	    height: 3px;
+	    background-color: #f82172;
+	    margin: 4px 0;
+	    transition: 0.4s;
+	}
+
+	/* Rotate first bar */
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	  transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	  opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	  transform: rotate(45deg) translate(-4px, -2px) ;
 	}
 	.call2{
 		background-image: url('img/mobilephone.png');
@@ -1237,11 +1339,6 @@ small span{
 	    z-index: 1;
 	    width: 76%;
 	}
-	.close{
-		background-image: url('img/krest.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
 	.info a{
 		border-bottom: 1px solid #f82370;
     	padding: 5px;
@@ -1267,7 +1364,38 @@ small span{
 		color: black;
 		text-decoration: none;
 	}
-	.menu2{
+	.menu2 {
+	  display: inline-block;
+	  cursor: pointer;
+	  top: 50%;
+	  left: 50%;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 24px;
+	    height: 3px;
+	    background-color: #f82172;
+	    margin: 4px 0;
+	    transition: 0.4s;
+	}
+
+	/* Rotate first bar */
+	.change .bar1 {
+	  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	  transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	  opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	  transform: rotate(45deg) translate(-4px, -2px) ;
+	}
+	/*.menu2{
 		background-image: url('img/hamburger.png');
 		background-repeat: no-repeat;
 		width: 25px;
@@ -1275,7 +1403,7 @@ small span{
 		outline: none;
 		border: none;
 		cursor: pointer;
-	}
+	}*/
 	.call2{
 		background-image: url('img/mobilephone.png');
 		background-repeat: no-repeat;
@@ -1477,11 +1605,7 @@ small span{
 	    z-index: 1;
 	    width: 80%;
 	}
-	.close{
-		background-image: url('img/krest.png');
-		background-repeat: no-repeat;
-		background-size: 100%;
-	}
+
 	.info a{
 		border-bottom: 1px solid #f82370;
     	padding: 5px;

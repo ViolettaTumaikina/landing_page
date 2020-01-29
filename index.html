@@ -21,7 +21,8 @@
 	<div class="popup">
 	<div class="popup_feedback_form">
 		<a class="close1" href="#"></a>
-		<form class="popup1" method="post" action="https://echo.htmlacademy.ru/">
+		<div id="results"> </div> 
+		<form class="popup1" method="post" action="" onsubmit="call()">
 			<label for="name_input">Введите имя</label>
 			<input id="name_input" type="text" name="name"/>
 			<label for="tel">Введите номер</label>
@@ -33,11 +34,19 @@
 	<header class="header">
 		<div class="fixed-container flex-container">
 			<div class="mobile_menu">
-				<button class="menu2"></button>
+				<div class="menu2" onclick="burgerMenu(this)">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
 				<span class="number2"><a href="tel:+79192652603">+7(919)265-26-03</a></span>
 				<button class="show_popup call2"></button>
 			</div>
-			<button class="menu"></button>
+			<div class="menu" onclick="burgerMenu(this)">
+				 <div class="bar1"></div>
+				 <div class="bar2"></div>
+				 <div class="bar3"></div>
+			</div>
 			<nav class="info">
 				<a href="#deals" class="info2"><span>Услуги</span></a>
 				<a href="#examples" class="info2"><span>Портфолио</span></a>
@@ -99,7 +108,7 @@
 			<div class="fon3">
 				<div class="examples fixed-container">
 					<a href="examples" id="examples"></a>
-					<h2>Примеры моих работ</h2>
+					<h2>Примеры моих&nbsp;работ</h2>
 					<div class="arrows">
 						<button class="backbtn"></button>
 						<button class="nextbtn"></button>
